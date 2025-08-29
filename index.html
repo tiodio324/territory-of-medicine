@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="https://schema.org/WebSite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Территория медицины - организация и проведение медицинских конференций, симпозиумов, семинаров и круглых столов. Аккредитованный провайдер НМО.">
+    <meta name="keywords" content="медицинские конференции, симпозиумы, семинары, НМО, здравоохранение, медицинские мероприятия, врачи, медицина">
+    <meta name="author" content="Территория медицины">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Территория медицины — пространство профессионального диалога">
+    <meta property="og:description" content="Организация и проведение медицинских конференций, симпозиумов, семинаров. Аккредитованный провайдер НМО.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.medconf.org/">
+    <meta property="og:image" content="img/og-image.jpg">
+    
+    <!-- Schema.org микроразметка -->
+    <meta itemprop="name" content="Территория медицины">
+    <meta itemprop="description" content="Организация медицинских конференций и мероприятий">
+    <meta itemprop="url" content="http://www.medconf.org/">
+    <meta itemprop="image" content="img/og-image.jpg">
+
+    <title>Территория медицины — пространство профессионального диалога</title>
+    
+    <link rel="canonical" href="http://www.medconf.org/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <meta name="msapplication-TileColor" content="#133816">
+    <meta name="theme-color" content="#133816">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body itemscope itemtype="https://schema.org/Organization">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="Территория медицины" class="header__logo-img">
+            </div>
+            
+            <nav class="header__nav">
+                <a href="#about" class="header__nav-link">О нас</a>
+                <a href="#services" class="header__nav-link">Услуги</a>
+                <a href="events.html" class="header__nav-link">Мероприятия</a>
+                <a href="#contacts" class="header__nav-link">Контакты</a>
+                <a href="#gallery" class="header__nav-link">Фотоматериалы</a>
+            </nav>
+            
+            <button class="header__mobile-menu">
+                <img src="img/mobile-menu-switcher.svg" alt="Меню">
+            </button>
+
+            <div class="header__search">
+                <input type="text" placeholder="Поиск по сайту" class="header__search-input">
+                <img src="img/search.svg" alt="Поиск">
+            </div>
+        </div>
+        <div class="header__search header__search-mobile">
+            <input type="text" placeholder="Поиск по сайту" class="header__search-input">
+            <img src="img/search.svg" alt="Поиск">
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__panel">
+                <button class="mobile-menu__close" aria-label="Закрыть меню">
+                    <img src="img/icon-park-solid_close-one.svg" alt="Закрыть">
+                </button>
+                
+                <nav class="mobile-menu__nav">
+                    <a href="#about" class="mobile-menu__nav-link">О нас</a>
+                    <a href="#services" class="mobile-menu__nav-link">Услуги</a>
+                    <a href="events.html" class="mobile-menu__nav-link">Мероприятия</a>
+                    <a href="#contacts" class="mobile-menu__nav-link">Контакты</a>
+                    <a href="#gallery" class="mobile-menu__nav-link">Фотоматериалы</a>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <a href="tel:+79111472597" class="mobile-menu__contact">
+                        <svg class="mobile-menu__contact-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                            <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>+7 911 147-25-97</span>
+                    </a>
+                    <a href="mailto:79111472597@ya.ru" class="mobile-menu__contact">
+                        <svg class="mobile-menu__contact-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 3.99-8 5-8-5V6l8 5 8-5v1.99z"/>
+                        </svg>
+                        <span>79111472597@ya.ru</span>
+                    </a>
+                    <address class="mobile-menu__address">Санкт-Петербург, Большой Сампсониевский пр-кт, д.42, лит.Б, офис 312-Т</address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Главная секция -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Территория медицины — <span>пространство профессионального диалога</span></h1>
+                <p class="hero__subtitle">Организация и проведение конференций, симпозиумов и семинаров для специалистов здравоохранения.</p>
+                <a href="#events" class="hero__button">Посмотреть ближайшие мероприятия</a>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">О компании</h2>
+                    <p class="section__subtitle">Мы — ведущая компания с многолетним опытом в организации медицинских мероприятий. Наши проекты охватывают как офлайн-, так и онлайн-форматы, обеспечивая безупречный уровень подготовки и реализации.</p>
+                </div>
+                
+                <div class="stats">
+                    <div class="stats__content">
+                        <div class="stats__item">
+                            <div class="stats__number">120+</div>
+                            <div class="stats__text">деловых мероприятий</div>
+                        </div>
+                        <div class="stats__divider"></div>
+                        <div class="stats__item">
+                            <div class="stats__number">2000+</div>
+                            <div class="stats__text">участников вебинаров и круглых столов</div>
+                        </div>
+                        <div class="stats__divider"></div>
+                        <div class="stats__item">
+                            <div class="stats__number">50+</div>
+                            <div class="stats__text">конференций с очным и онлайн-участием</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="section" id="services">
+            <div class="container services-container">
+                <div class="section__header">
+                    <h2 class="section__title">Наши услуги</h2>
+                    <p class="section__subtitle">Наши услуги включают весь спектр организационной работы — от привлечения лидеров мнений в медицинской сфере до финансового планирования и подготовки программы</p>
+                </div>
+                
+                <div class="services">
+                    <div class="services__grid">
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Кейтеринг</h3>
+                                <p class="service-card__description">Организация кофе-брейков, фуршетов и торжественных ужинов.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_1.svg" alt="Кейтеринг">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Программа мероприятия</h3>
+                                <p class="service-card__description">Помощь в составлении интересной и логичной программы.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_2.svg" alt="Программа мероприятия">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Работа со спонсорами</h3>
+                                <p class="service-card__description">Профессиональное взаимодействие и индивидуальный подход к коммерческим предложениям.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_3.svg" alt="Работа со спонсорами">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Консультирование</h3>
+                                <p class="service-card__description">Непрерывная поддержка на всех этапах подготовки.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_4.svg" alt="Консультирование">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Полиграфия и сувениры</h3>
+                                <p class="service-card__description">Оформление мероприятия любой сложности печатной и сувенирной продукцией.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_5.svg" alt="Полиграфия и сувениры">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Сопровождение участников и спикеров мероприятия</h3>
+                                <p class="service-card__description">Организация проезда, проживания и поддержки спикеров и гостей.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_6.svg" alt="Сопровождение участников и спикеров мероприятия">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Подбор площадки</h3>
+                                <p class="service-card__description">Подбор и аренда оптимального места для вашего мероприятия.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_7.svg" alt="Подбор площадки">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Брендирование событий</h3>
+                                <p class="service-card__description">Комплексное оформление и координация всех элементов мероприятия.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_8.svg" alt="Брендирование событий">
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Техническое сопровождение</h3>
+                                <p class="service-card__description">Консультация и помощь в выборе оборудования и технологий.</p>
+                            </div>
+                            <div class="service-card__icon">
+                                <img src="img/services-card-icon_9.svg" alt="Техническое сопровождение">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section class="section" id="gallery">
+            <div class="container gallery__container">
+                <h2 class="gallery__title">Атмосфера профессионального общения и научных дискуссий — в нашей фотогалерее.</h2>
+                
+                <div class="gallery__slider" x-data="{ currentSlide: 0 }">
+                    <div class="gallery__slides">
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_2.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_3.png" alt="Деловой ужин участников конференции" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Деловой ужин участников конференции</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="">
+                                    <span>05.08.2025, 19:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img src="img/gallery-card_1.png" alt="Открытие международной конференции по кардиологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Открытие международной конференции по кардиологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__dots">
+                        <div>
+                            <button class="gallery__dot gallery__dot--active" @click="currentSlide = 0"></button>
+                            <button class="gallery__dot" @click="currentSlide = 1"></button>
+                            <button class="gallery__dot" @click="currentSlide = 2"></button>
+                            <button class="gallery__dot" @click="currentSlide = 3"></button>
+                            <button class="gallery__dot" @click="currentSlide = 4"></button>
+                            <button class="gallery__dot" @click="currentSlide = 5"></button>
+                            <button class="gallery__dot" @click="currentSlide = 6"></button>
+                            <button class="gallery__dot" @click="currentSlide = 7"></button>
+                            <button class="gallery__dot" @click="currentSlide = 8"></button>
+                            <button class="gallery__dot" @click="currentSlide = 9"></button>
+                        </div>
+                        
+                        <div class="gallery__arrows-mobile">
+                            <button class="gallery__arrow gallery__arrow--prev" @click="currentSlide = currentSlide > 0 ? currentSlide - 1 : 9">
+                                <img src="img/arrow-left.svg" alt="arrow-left">
+                            </button>
+                            
+                            <button class="gallery__arrow gallery__arrow--next" @click="currentSlide = currentSlide < 9 ? currentSlide + 1 : 0">
+                                <img src="img/arrow-right.svg" alt="arrow-right">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="gallery__arrow gallery__arrow--prev gallery__arrow-desktop" @click="currentSlide = currentSlide > 0 ? currentSlide - 1 : 9">
+                        <img src="img/arrow-left.svg" alt="arrow-left">
+                    </button>
+                    
+                    <button class="gallery__arrow gallery__arrow--next gallery__arrow-desktop" @click="currentSlide = currentSlide < 9 ? currentSlide + 1 : 0">
+                        <img src="img/arrow-right.svg" alt="arrow-right">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ближайшие мероприятия -->
+        <section class="section" id="events">
+            <div class="container gallery__container">
+                <h2 class="section__title text-center">Ближайшие мероприятия</h2>
+                
+                <div class="gallery__slider" x-data="{ currentSlide: 0 }">
+                    <div class="gallery__slides">
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_2.png" alt="Деловой ужин участников конференции" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Деловой ужин участников конференции</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.08.2025, 19:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_3.png" alt="Международная конференция" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Международная конференция по современным методам лечения</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>15.06.2025, 10:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery__slide" onclick="window.location.href='event.html'">
+                            <img src="img/event-card_1.png" alt="Семинар для молодых специалистов в сфере фармакологии" class="gallery__image">
+                            <div class="gallery__content">
+                                <h3 class="gallery__title-small">Семинар для молодых специалистов в сфере фармакологии</h3>
+                                <div class="gallery__date">
+                                    <img src="img/calendar.svg" alt="calendar-icon">
+                                    <span>05.07.2025, 09:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__dots">
+                        <div>
+                            <button class="gallery__dot gallery__dot--active" @click="currentSlide = 0"></button>
+                            <button class="gallery__dot" @click="currentSlide = 1"></button>
+                            <button class="gallery__dot" @click="currentSlide = 2"></button>
+                            <button class="gallery__dot" @click="currentSlide = 3"></button>
+                            <button class="gallery__dot" @click="currentSlide = 4"></button>
+                            <button class="gallery__dot" @click="currentSlide = 5"></button>
+                            <button class="gallery__dot" @click="currentSlide = 6"></button>
+                            <button class="gallery__dot" @click="currentSlide = 7"></button>
+                            <button class="gallery__dot" @click="currentSlide = 8"></button>
+                            <button class="gallery__dot" @click="currentSlide = 9"></button>
+                        </div>
+                        
+                        <div class="gallery__arrows-mobile">
+                            <button class="gallery__arrow gallery__arrow--prev events__arrow-button" @click="currentSlide = currentSlide > 0 ? currentSlide - 1 : 9">
+                                <img src="img/arrow-left.svg" alt="arrow-left">
+                            </button>
+                            
+                            <button class="gallery__arrow gallery__arrow--next events__arrow-button" @click="currentSlide = currentSlide < 9 ? currentSlide + 1 : 0">
+                                <img src="img/arrow-right.svg" alt="arrow-right">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="gallery__arrow gallery__arrow--prev gallery__arrow-desktop events__arrow-button" @click="currentSlide = currentSlide > 0 ? currentSlide - 1 : 9">
+                        <img src="img/arrow-left.svg" alt="arrow-left">
+                    </button>
+                    
+                    <button class="gallery__arrow gallery__arrow--next gallery__arrow-desktop events__arrow-button" @click="currentSlide = currentSlide < 9 ? currentSlide + 1 : 0">
+                        <img src="img/arrow-right.svg" alt="arrow-right">
+                    </button>
+                </div>
+                
+                <a href="events.html" class="events__button">Смотреть все мероприятия</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contacts">
+        <div class="footer__content">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="img/logo-footer.svg" alt="Территория медицины" class="footer__logo-img">
+                </div>
+                
+                <div class="footer__contacts">
+                    <div class="footer__contact">
+                        <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>+7 911 147-25-97</span>
+                    </div>
+                    <div class="footer__contact">
+                        <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5V2z"/>
+                        </svg>
+                        <span>79111472597@ya.ru</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__address">
+                Санкт-Петербург, Большой Сампсониевский пр-кт, д.42, лит.Б, офис 312-Т
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__links">
+                    <a href="#privacy" class="footer__link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__copyright">©2025 Территория медицины, все права защищены</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Куки уведомление -->
+    <div class="cookies" x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 7000)">
+        <div class="cookies__text">Мы используем cookie<br>и <a href="#privacy">Рекомендательные технологии</a></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <noscript>
+        JavaScript отключен.<br>Для корректной работы сайта необходимо включить JavaScript в вашем браузере.<br>Пожалуйста, включите JavaScript и перезагрузите страницу.
+    </noscript>
+</body>
+</html>
